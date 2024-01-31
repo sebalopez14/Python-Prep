@@ -12,7 +12,7 @@ def de_lista_a_dicc(x):
         dicc_repes[i] = contador
     return dicc_repes
 
-def numero_mas_grande_dicc(dicc):
+def elem_mas_repite_dicc(dicc):
     valormayor = 0
     for i in dicc:
         valor = dicc[i]
@@ -27,14 +27,13 @@ def numero_mas_grande_dicc(dicc):
             print("Empata en cantidad con ", i, ",que se repite ",valormayor," veces")
 
 
-# diccionario = de_lista_a_dicc(numeros)
-# print(diccionario)
-# numero_mas_grande_dicc(diccionario)
+diccionario = de_lista_a_dicc(numeros)
+print(diccionario)
+elem_mas_repite_dicc(diccionario)
 
-#COMO HAGO SI LO QUE TENGO QUE CONTAR NO SON NUMEROS, CON LISTAS? OSEA LISTA DENTRO DEL DICC?
 
 lista_strings = ["verde" ,"verde" ,"verde" , "rojo", "azul", "azul"]
 
 diccionario = de_lista_a_dicc(lista_strings)
 print(diccionario)
-numero_mas_grande_dicc(diccionario)
+elem_mas_repite_dicc(diccionario)
